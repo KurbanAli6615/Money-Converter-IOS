@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		06444BA8258C8C11004C7FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06444BA6258C8C11004C7FD2 /* Main.storyboard */; };
 		06444BAA258C8C12004C7FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06444BA9258C8C12004C7FD2 /* Assets.xcassets */; };
 		06444BAD258C8C12004C7FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06444BAB258C8C12004C7FD2 /* LaunchScreen.storyboard */; };
+		06C9CEC2258E402200B9A046 /* allCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9CEC1258E402200B9A046 /* allCurrencies.swift */; };
+		EF54B8907C90B30AE104C0DF /* Pods_Conver_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE2723855A9D5AFBCB9FD1E /* Pods_Conver_Money.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		06444BA9258C8C12004C7FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06444BAC258C8C12004C7FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06444BAE258C8C12004C7FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06C9CEC1258E402200B9A046 /* allCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allCurrencies.swift; sourceTree = "<group>"; };
+		0FE2723855A9D5AFBCB9FD1E /* Pods_Conver_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conver_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DB722967ADF6D144A1B12F /* Pods-Conver Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conver Money.debug.xcconfig"; path = "Target Support Files/Pods-Conver Money/Pods-Conver Money.debug.xcconfig"; sourceTree = "<group>"; };
+		C5AEA906393525944FD489AA /* Pods-Conver Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conver Money.release.xcconfig"; path = "Target Support Files/Pods-Conver Money/Pods-Conver Money.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF54B8907C90B30AE104C0DF /* Pods_Conver_Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				06444B9F258C8C11004C7FD2 /* Conver Money */,
 				06444B9E258C8C11004C7FD2 /* Products */,
+				81E1B27A3B83EE9DEBC7F5D0 /* Pods */,
+				3EAB07C4C08E1787FB76D347 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				06444BA0258C8C11004C7FD2 /* AppDelegate.swift */,
 				06444BA2258C8C11004C7FD2 /* SceneDelegate.swift */,
 				06444BA4258C8C11004C7FD2 /* ViewController.swift */,
+				06C9CEC1258E402200B9A046 /* allCurrencies.swift */,
 				06444BA6258C8C11004C7FD2 /* Main.storyboard */,
 				06444BA9258C8C12004C7FD2 /* Assets.xcassets */,
 				06444BAB258C8C12004C7FD2 /* LaunchScreen.storyboard */,
 				06444BAE258C8C12004C7FD2 /* Info.plist */,
 			);
 			path = "Conver Money";
+			sourceTree = "<group>";
+		};
+		3EAB07C4C08E1787FB76D347 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE2723855A9D5AFBCB9FD1E /* Pods_Conver_Money.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81E1B27A3B83EE9DEBC7F5D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92DB722967ADF6D144A1B12F /* Pods-Conver Money.debug.xcconfig */,
+				C5AEA906393525944FD489AA /* Pods-Conver Money.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06444BB1258C8C12004C7FD2 /* Build configuration list for PBXNativeTarget "Conver Money" */;
 			buildPhases = (
+				5722129F4787B21234EE5AFB /* [CP] Check Pods Manifest.lock */,
 				06444B99258C8C11004C7FD2 /* Sources */,
 				06444B9A258C8C11004C7FD2 /* Frameworks */,
 				06444B9B258C8C11004C7FD2 /* Resources */,
+				1B8795670BEED63A09F47244 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B8795670BEED63A09F47244 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conver Money/Pods-Conver Money-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conver Money/Pods-Conver Money-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conver Money/Pods-Conver Money-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5722129F4787B21234EE5AFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conver Money-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06444B99258C8C11004C7FD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +210,7 @@
 			files = (
 				06444BA5258C8C11004C7FD2 /* ViewController.swift in Sources */,
 				06444BA1258C8C11004C7FD2 /* AppDelegate.swift in Sources */,
+				06C9CEC2258E402200B9A046 /* allCurrencies.swift in Sources */,
 				06444BA3258C8C11004C7FD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +355,7 @@
 		};
 		06444BB2258C8C12004C7FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DB722967ADF6D144A1B12F /* Pods-Conver Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +374,7 @@
 		};
 		06444BB3258C8C12004C7FD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5AEA906393525944FD489AA /* Pods-Conver Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
